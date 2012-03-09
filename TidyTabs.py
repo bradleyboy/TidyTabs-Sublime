@@ -16,7 +16,7 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
             if file.window() != None:
                 continue
 
-            # If file is not dirty and has not been modified in one hour
+            # If file is not dirty and has not been modified in 30 minutes
             # and also has not been accessed in the last minute, close it.
             if (now - mtime > 1800 and now - atime > 60
                 and not file.is_dirty() and not file.is_scratch()):
