@@ -2,7 +2,7 @@
 
 Ever get to the end (middle?) of a day of coding only to find your window littered with tabs that are nearly impossible to search through visually? Find yourself rage-quitting all your tabs in disgust and starting over? No? Just me? Ok.
 
-With this plugin, a keystroke (ctrl+alt+w) will close all tabs that have been inactive (no modifications) for 30 minutes. It will only close tabs in the background – so files that are open and active in your window won't be closed. Likewise, it will not close  files with unsaved changes.
+With this plugin, a simple keystroke `ctrl + alt + w` will close all tabs whose file has not been modified in the last 30 minutes. It will only close tabs in the background – so files that are open and active in your window won't be closed. Likewise, it will not close files with unsaved changes.
 
 ##Installation
 Clone or download this repo to your **Packages** folder.
