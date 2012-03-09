@@ -1,6 +1,6 @@
 #Tidy Tabs for Sublime Text 2
 
-Ever get to the end (middle?) of a day of coding only to find your window littered with tabs that are nearly impossible to search through visually? With this plugin, a keystroke (ctrl-w) will close all tabs that have been inactive (no modifications) for 60 minutes. It will only close tabs in the background, so whatever you have currently open and active in your window won't be closed. It also will not close unsaved files.
+Ever get to the end (middle?) of a day of coding only to find your window littered with tabs that are nearly impossible to search through visually? With this plugin, a keystroke (ctrl+alt+w) will close all tabs that have been inactive (no modifications) for 60 minutes. It will only close tabs in the background, so whatever you have currently open and active in your window won't be closed. It also will not close unsaved files.
 
 ##Installation
 Just clone this repo to your **Packages** folder.
