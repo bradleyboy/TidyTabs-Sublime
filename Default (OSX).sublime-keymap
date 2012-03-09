@@ -1,0 +1,5 @@
+[  
+    {  
+        "keys": ["ctrl+w"], "command": "tidy_tabs"  
+    }  
+]
