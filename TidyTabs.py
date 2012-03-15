@@ -15,7 +15,7 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
             '''
             Close the tab if all of the following are true:
                 * File still exists
-                * File is not the current view this window
+                * File is not the current view in its window
                 * File hasn't been modified in 30 minutes
                 * File hasn't been accessed in the last minute
                 * File is not in an unsaved state (dirty)
