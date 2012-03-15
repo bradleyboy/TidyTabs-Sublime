@@ -24,7 +24,7 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
             if (os.path.exists(path) == True
                 and file.window() == None
                 and now - os.path.getmtime(path) > 1800
-                and now - os.path.getatime(path) > 2
+                and now - os.path.getatime(path) > 60
                 and not file.is_dirty()
                 and not file.is_scratch()):
                     self.window.focus_view(file)
