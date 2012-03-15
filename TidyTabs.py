@@ -10,17 +10,22 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
 
         for file in self.window.views():
 
-            if os.path.exists(file.file_name()) == True:
-                mtime = os.path.getmtime(file.file_name())
-                atime = os.path.getatime(file.file_name())
+            path = file.file_name()
 
-                # Do not close the current file of any group
-                if file.window() != None:
-                    continue
-
-                # If file is not dirty and has not been modified in 30 minutes
-                # and also has not been accessed in the last minute, close it.
-                if (now - mtime > 1800 and now - atime > 60
-                    and not file.is_dirty() and not file.is_scratch()):
+            '''
+            Close the tab if all of the following are true:
+                * File still exists
+                * File is not the current view this window
+                * File hasn't been modified in 30 minutes
+                * File hasn't been accessed in the last minute
+                * File is not in an unsaved state (dirty)
+                * File is not a scratch (unsaved file)
+            '''
+            if (os.path.exists(path) == True
+                and file.window() == None
+                and now - os.path.getmtime(path) > 1800
+                and now - os.path.getatime(path) > 2
+                and not file.is_dirty()
+                and not file.is_scratch()):
                     self.window.focus_view(file)
                     self.window.run_command('close_file')
