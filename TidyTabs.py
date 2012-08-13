@@ -27,7 +27,8 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
                 * File is not in an unsaved state (dirty)
                 * File is not a scratch (unsaved file)
             '''
-            if (os.path.exists(path) == True
+            if (path
+                and os.path.exists(path) == True
                 and file.window() == None
                 and now - os.path.getmtime(path) > modified_duration
                 and now - os.path.getatime(path) > accessed_duration
