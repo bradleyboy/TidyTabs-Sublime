@@ -1,0 +1,7 @@
+{
+    // Files modified in the last <x> seconds are kept open
+    "tidytabs_modified_duration": 1800,
+
+    // Files accessed in the last <x> seconds are kept open as well
+    "tidytabs_accessed_duration": 60
+}
