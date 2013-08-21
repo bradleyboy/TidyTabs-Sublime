@@ -1,5 +1,5 @@
-[  
-    {  
-        "keys": ["ctrl+alt+w"], "command": "tidy_tabs"  
-    }  
+[
+    {
+        "keys": ["ctrl+alt+w"], "command": "tidy_tabs"
+    }
 ]
