@@ -3,5 +3,8 @@
     "tidytabs_modified_duration": 1800,
 
     // Files accessed in the last <x> seconds are kept open as well
-    "tidytabs_accessed_duration": 60
+    "tidytabs_accessed_duration": 60,
+
+    // Execute tidytabs after save a file
+    "tidytabs_run_on_post_save": "true"
 }

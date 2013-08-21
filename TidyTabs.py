@@ -36,3 +36,10 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
                 and not file.is_scratch()):
                     self.window.focus_view(file)
                     self.window.run_command('close_file')
+
+class TidyTabsListener(sublime_plugin.EventListener):
+    def on_post_save(self, view):
+        run_on_post_save = sublime.load_settings(__name__ + ".sublime-settings").get('tidytabs_run_on_post_save')
+        if not run_on_post_save:
+            return
+        view.window().run_command("tidy_tabs")
