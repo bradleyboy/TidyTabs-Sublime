@@ -2,11 +2,13 @@
 
 Ever get to the end (middle?) of a day of coding only to find your window littered with tabs that are nearly impossible to search through visually? Find yourself rage-quitting all your tabs in disgust and starting over? No? Just me? Ok.
 
-With this plugin, a simple keystroke `ctrl + alt + w` will close all tabs whose file has not been modified in the last 30 minutes. It will only close tabs in the background – so files that are open and active in your window won't be closed. Likewise, it will not close files with unsaved changes.
+With this plugin, a simple keystroke `ctrl + alt + w` will close all tabs whose file has not been modified in the last 30 minutes (to change this interval, see Preferences > Packages > TidyTabs > Settings). It will only close tabs in the background – so files that are open and active in your window won't be closed. Likewise, it will not close files with unsaved changes.
+
+You can also configure the plugin to automatically close old tabs each time you save a file. To enable this, go to Preferences > Packages > TidyTabs > Settings and set `tidytabs_run_on_post_save` to true.
 
 ##Installation with Package Manager (Recommended)
 
-The easiest way to install is via the excellent [Sublime Package Manager](http://wbond.net/sublime_packages/package_control). Once Package Manager is installed, bring up the commands menu (`Command + Shift + P` on Mac, `Control + Shift + P` on Windows or Linux), then type "Package Control" to filter the commands list. Select the "Package Control: Install Package" command, then find and install the TidyTabs plugin.
+The easiest way to install is via the excellent [Sublime Package Manager](https://sublime.wbond.net/installation). Once Package Manager is installed, bring up the commands menu (`Command + Shift + P` on Mac, `Control + Shift + P` on Windows or Linux), then type "Package Control" to filter the commands list. Select the "Package Control: Install Package" command, then find and install the TidyTabs plugin.
 
 ##Installation without Package Manager
 Clone or download this repo to your **Packages** folder.
