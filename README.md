@@ -4,7 +4,11 @@ Ever get to the end (middle?) of a day of coding only to find your window litter
 
 With this plugin, a simple keystroke `ctrl + alt + w` will close all tabs whose file has not been modified in the last 30 minutes. It will only close tabs in the background – so files that are open and active in your window won't be closed. Likewise, it will not close files with unsaved changes.
 
-##Installation
+##Installation with Package Manager (Recommended)
+
+The easiest way to install is via the excellent [Sublime Package Manager](http://wbond.net/sublime_packages/package_control). Once Package Manager is installed, bring up the commands menu (`Command + Shift + P` on Mac, `Control + Shift + P` on Windows or Linux), then type "Package Control" to filter the commands list. Select the "Package Control: Install Package" command, then find and install the TidyTabs plugin.
+
+##Installation without Package Manager
 Clone or download this repo to your **Packages** folder.
 
 ##License
