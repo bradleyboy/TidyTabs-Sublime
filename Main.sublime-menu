@@ -18,14 +18,14 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/TidyTabs/TidyTabs.sublime-settings"
+                                    "file": "${packages}/TidyTabs-Sublime/TidyTabs.sublime-settings"
                                 },
                                 "caption": "Settings – Default"
                             },
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/TidyTabs/Default (Windows).sublime-keymap",
+                                    "file": "${packages}/TidyTabs-Sublime/Default (Windows).sublime-keymap",
                                     "platform": "Windows"
                                 },
                                 "caption": "Key Bindings – Default"
@@ -33,7 +33,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/TidyTabs/Default (OSX).sublime-keymap",
+                                    "file": "${packages}/TidyTabs-Sublime/Default (OSX).sublime-keymap",
                                     "platform": "OSX"
                                 },
                                 "caption": "Key Bindings – Default"
@@ -41,7 +41,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/TidyTabs/Default (Linux).sublime-keymap",
+                                    "file": "${packages}/TidyTabs-Sublime/Default (Linux).sublime-keymap",
                                     "platform": "Linux"
                                 },
                                 "caption": "Key Bindings – Default"
