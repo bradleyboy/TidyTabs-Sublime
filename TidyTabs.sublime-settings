@@ -6,5 +6,5 @@
     "tidytabs_accessed_duration": 60,
 
     // Execute tidytabs after save a file
-    "tidytabs_run_on_post_save": "true"
+    "tidytabs_run_on_post_save": false
 }
