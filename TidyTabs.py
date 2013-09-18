@@ -18,10 +18,11 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
 
         for x in range(0, self.window.num_groups()):
 
-            if (len(self.window.views_in_group(x)) < threshold):
-                break
+            for file in self.window.views_in_group(x):
 
-            for file in self.window.views_in_group(x):      
+                if (len(self.window.views_in_group(x)) <= threshold):
+                    continue
+
                 path = file.file_name()
 
                 '''
