@@ -11,9 +11,20 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
         default_modified_duration = default_settings.get('tidytabs_modified_duration')
         default_accessed_duration = default_settings.get('tidytabs_accessed_duration')
         default_threshold = default_settings.get('tidytabs_threshold')
+
+        if (not default_modified_duration):
+            default_modified_duration = 1800
+
+        if (not default_accessed_duration):
+            default_accessed_duration = 60
+
+        if (not default_threshold):
+            default_threshold = 0
+
         modified_duration = int(self.window.active_view().settings().get('tidytabs_modified_duration', default_modified_duration))
         accessed_duration = int(self.window.active_view().settings().get('tidytabs_accessed_duration', default_accessed_duration))
         threshold = int(self.window.active_view().settings().get('tidytabs_threshold', default_threshold))
+
         now = time.time()
 
         for x in range(0, self.window.num_groups()):
