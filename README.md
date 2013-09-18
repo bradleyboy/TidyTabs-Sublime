@@ -4,7 +4,24 @@ Ever get to the end (middle?) of a day of coding only to find your window litter
 
 With this plugin, a simple keystroke `ctrl + alt + w` will close all tabs whose file has not been modified in the last 30 minutes (to change this interval, see Preferences > Packages > TidyTabs > Settings). It will only close tabs in the background – so files that are open and active in your window won't be closed. Likewise, it will not close files with unsaved changes.
 
-You can also configure the plugin to automatically close old tabs each time you save a file. To enable this, go to Preferences > Packages > TidyTabs > Settings and set `tidytabs_run_on_post_save` to true.
+You can change the key binding in Preferences > Package Settings > TidyTabs > Key Bindings.
+
+##Run automatically
+
+You can also configure the plugin to automatically close old tabs each time you save a file. To enable this, go to Preferences > Package Settings > TidyTabs > Settings and set `tidytabs_run_on_post_save` to `true`:
+
+~~~js
+{
+    // Files modified in the last <x> seconds are kept open
+    "tidytabs_modified_duration": 1800,
+
+    // Files accessed in the last <x> seconds are kept open as well
+    "tidytabs_accessed_duration": 60,
+
+    // Execute tidytabs after save a file
+    "tidytabs_run_on_post_save": true
+}
+~~~
 
 ##Installation with Package Manager (Recommended)
 
