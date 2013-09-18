@@ -5,7 +5,7 @@
     // Files accessed in the last <x> seconds are kept open as well
     "tidytabs_accessed_duration": 60,
 
-    // Execute tidytabs after save a file
+    // Automatically run tidytabs after a file is saved
     "tidytabs_run_on_post_save": true,
 
     // If this is set and greater than 0, tidytabs will only run if

@@ -1,4 +1,6 @@
-#Tidy Tabs for Sublime Text 2
+#Tidy Tabs for Sublime Text
+
+*Note: Sublime Text 3 beta now supported!*
 
 Ever get to the end (middle?) of a day of coding only to find your window littered with tabs that are nearly impossible to search through visually? Find yourself rage-quitting all your tabs in disgust and starting over? No? Just me? Ok.
 
@@ -11,16 +13,18 @@ You can change the key binding in Preferences > Package Settings > TidyTabs > Ke
 You can also configure the plugin to automatically close old tabs each time you save a file. To enable this, go to Preferences > Package Settings > TidyTabs > Settings and set `tidytabs_run_on_post_save` to `true`:
 
 ~~~js
-{
-    // Files modified in the last <x> seconds are kept open
-    "tidytabs_modified_duration": 1800,
+// Automatically run tidytabs after a file is saved
+"tidytabs_run_on_post_save": true,
+~~~
 
-    // Files accessed in the last <x> seconds are kept open as well
-    "tidytabs_accessed_duration": 60,
+##Threshold
 
-    // Execute tidytabs after save a file
-    "tidytabs_run_on_post_save": true
-}
+Another configuration option is the **threshold**. Setting this to a number greater than 0 will ensure that TidyTabs only runs when the number of tabs in that view is greater than the threshold.
+
+~~~js
+// If this is set and greater than 0, tidytabs will only run if
+// the number of tabs is greater than the threshold setting.
+"tidytabs_threshold": 5
 ~~~
 
 ##Installation with Package Manager (Recommended)
