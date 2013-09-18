@@ -35,16 +35,14 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
                     * File is not a scratch (unsaved file)
                 '''
                 if (path
-                    and os.path.exists(path) == True
-                    and not file == self.window.active_view_in_group(x)
-                    and now - os.path.getmtime(path) > modified_duration
-                    and now - os.path.getatime(path) > accessed_duration
-                    and not file.is_dirty()
-                    and not file.is_scratch()):
-                        print('CLOSE: ' + path)
-                        self.window.focus_view(file)
-                        self.window.run_command('close_file')
-            
+                        and os.path.exists(path) is True
+                        and not file == self.window.active_view_in_group(x)
+                        and now - os.path.getmtime(path) > modified_duration
+                        and now - os.path.getatime(path) > accessed_duration
+                        and not file.is_dirty()
+                        and not file.is_scratch()):
+                    self.window.focus_view(file)
+                    self.window.run_command('close_file')
 
 
 class TidyTabsListener(sublime_plugin.EventListener):
