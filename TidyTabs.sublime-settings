@@ -6,7 +6,7 @@
     "tidytabs_accessed_duration": 60,
 
     // Automatically run tidytabs after a file is saved
-    "tidytabs_run_on_post_save": true,
+    "tidytabs_run_on_post_save": false,
 
     // If this is set and greater than 0, tidytabs will only run if
     // the number of tabs is greater than the threshold setting.
