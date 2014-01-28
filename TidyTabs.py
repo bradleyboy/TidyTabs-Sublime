@@ -29,6 +29,8 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
 
         for x in range(0, self.window.num_groups()):
 
+            active = self.window.active_view_in_group(x)
+
             for file in self.window.views_in_group(x):
 
                 if (len(self.window.views_in_group(x)) <= threshold):
@@ -54,6 +56,8 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
                         and not file.is_scratch()):
                     self.window.focus_view(file)
                     self.window.run_command('close_file')
+
+            self.window.focus_view(active)
 
 
 class TidyTabsListener(sublime_plugin.EventListener):
