@@ -27,9 +27,9 @@ class TidyTabsCommand(sublime_plugin.WindowCommand):
 
         now = time.time()
 
-        for x in range(0, self.window.num_groups()):
+        active = self.window.active_view();
 
-            active = self.window.active_view_in_group(x)
+        for x in range(0, self.window.num_groups()):
 
             for file in self.window.views_in_group(x):
 
