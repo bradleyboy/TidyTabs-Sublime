@@ -1,6 +1,6 @@
 #Tidy Tabs for Sublime Text
 
-*Note: Sublime Text 3 beta now supported!*
+*Note: Also available for [Atom](https://atom.io/packages/tidy-tabs)!*
 
 Ever get to the end (middle?) of a day of coding only to find your window littered with tabs that are nearly impossible to search through visually? Find yourself rage-quitting all your tabs in disgust and starting over? No? Just me? Ok.
 
